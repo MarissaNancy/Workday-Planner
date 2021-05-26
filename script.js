@@ -13,6 +13,7 @@ $(".savebutton").on('click', function(){
 
 function hourUpdater(){
     // get current hour from moment.js
+    //to get currenthour we must set it as a var equal to moments.hours
     var currentHour = moment().hours();
 
     // for each time block you need an function
@@ -36,7 +37,9 @@ hourUpdater();
 
 // set interval to where page updates every 30s
 
-
+setTimeout(function(){
+    location = ''
+  },60000);
 
 // get items from local storage
 
