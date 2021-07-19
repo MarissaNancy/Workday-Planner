@@ -1,5 +1,7 @@
 //start with moment time container 
 $(document).ready(function(){
+    getLocalStorage();
+
 
     var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
@@ -43,6 +45,12 @@ setTimeout(function(){
 
 // get items from local storage
 
+// function getLocalStorage() {
+//     if (localStorage.getItem("text")){
+//         textContent = JSON.parse(localStorage.getItem("text"));
+//     } 
+// }
+
 $("#9 .input").val(localStorage.getItem("9"))
 $("#10 .input").val(localStorage.getItem("10"))
 $("#11 .input").val(localStorage.getItem("11"))
@@ -52,8 +60,6 @@ $("#14 .input").val(localStorage.getItem("14"))
 $("#15 .input").val(localStorage.getItem("15"))
 $("#16 .input").val(localStorage.getItem("16"))
 $("#17 .input").val(localStorage.getItem("17"))
-
-
 
 
 });
