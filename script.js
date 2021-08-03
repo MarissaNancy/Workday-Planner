@@ -1,16 +1,18 @@
 //start with moment time container 
 $(document).ready(function(){
-    getLocalStorage();
-
 
     var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
 //when button is clicked execute the function here this is referring to the text closest to the button//
-$(".savebutton").on('click', function(){
+$(".saveBtn").on('click', function(){
     var text = $(this).siblings(".input").val()
     var time = $(this).parent().attr("id");
     localStorage.setItem(time, text);
+})
+
+$(".deleteBtn").on('click', function(){
+    
 })
 
 function hourUpdater(){
@@ -43,13 +45,6 @@ setTimeout(function(){
     location = ''
   },60000);
 
-// get items from local storage
-
-// function getLocalStorage() {
-//     if (localStorage.getItem("text")){
-//         textContent = JSON.parse(localStorage.getItem("text"));
-//     } 
-// }
 
 $("#9 .input").val(localStorage.getItem("9"))
 $("#10 .input").val(localStorage.getItem("10"))
