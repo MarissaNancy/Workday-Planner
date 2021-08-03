@@ -19,11 +19,9 @@ Using what we've learned so far we have to alter code to create a simple calende
 - If user clicks on a timeblock and can enter an event and save event for that timeblock
 - Event should also be saved in local storage so if the page is refreshed the saved event still exsist.
 
-## Mockup 
-This is what the page should look like
-![This is what my page looks like ](Assets/hp.png)
-()
+## Mockup
 > **To view this application**: visit deployed [Link](https://marissanancy.github.io/Workday-Planner/)
 
+![This is what my page looks like ](Assets/hp.png)
 
-Here is the link to my deployed page 
+
